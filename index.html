@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Jialuo Hu,software engineer,coding,portfolio,programmer">
-    <link rel="icon" type="image/png" href="res/favicon.png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Jialuo Hu,software engineer,coding,portfolio,programmer"
+          name="keywords">
+    <link href="res/favicon.png" rel="icon" type="image/png">
+    <link href="css/layout.css" rel="stylesheet">
     <title>Portfolio-Jialuo Hu</title>
     <style>
-        proj-card {   
+        proj-card {
             display: block;
             background-color: lightblue;
             width: 300px;
@@ -31,7 +33,13 @@
 </head>
 
 <body>
-    <header>
+<div class="wrapper">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                Jialuo Hu
+            </a>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -41,21 +49,9 @@
                 <li><a href="pages/resume.html">Resume</a></li>
             </ul>
         </nav>
-        <!-- Extra credit -->
-        <math>
-            <mrow>
-                <mi>E</mi>
-                <mo>=</mo>
-                <mi>m</mi>
-                <msup>
-                    <mi>c</mi>
-                    <mn>2</mn>
-                </msup>
-            </mrow>
-        </math>
     </header>
 
-    <main>
+    <main class="main">
         <!-- Intro part -->
         <section>
             <h2 hidden>Introduction</h2>
@@ -63,7 +59,8 @@
                 <!-- Random picture -->
                 <picture>
                     <source srcset="https://picsum.photos/200/300">
-                    <img src="https://picsum.photos/200/300" alt="Profile Photo">
+                    <img alt="Profile Photo"
+                         src="https://picsum.photos/200/300">
                 </picture>
                 <div>
                     <h3>Hello I'm <i>Jialuo Hu</i></h3>
@@ -98,7 +95,12 @@
                         <a href="pages/projects.html#project1">
                             <proj-card>
                                 <h3>Project1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo ipsum et ipsam quasi quas aliquid laborum fugiat dolorum, necessitatibus neque eos, nam quam saepe mollitia est delectus laudantium! Qui?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Odio explicabo ipsum et
+                                    ipsam
+                                    quasi quas aliquid laborum fugiat dolorum,
+                                    necessitatibus neque eos, nam quam saepe
+                                    mollitia est delectus laudantium! Qui?</p>
                             </proj-card>
                         </a>
                     </li>
@@ -106,7 +108,12 @@
                         <a href="pages/projects.html#project2">
                             <proj-card>
                                 <h3>Project2</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo ipsum et ipsam quasi quas aliquid laborum fugiat dolorum, necessitatibus neque eos, nam quam saepe mollitia est delectus laudantium! Qui?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Odio explicabo ipsum et
+                                    ipsam
+                                    quasi quas aliquid laborum fugiat dolorum,
+                                    necessitatibus neque eos, nam quam saepe
+                                    mollitia est delectus laudantium! Qui?</p>
                             </proj-card>
                         </a>
                     </li>
@@ -114,7 +121,12 @@
                         <a href="pages/projects.html#project3">
                             <proj-card>
                                 <h3>Project3</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo ipsum et ipsam quasi quas aliquid laborum fugiat dolorum, necessitatibus neque eos, nam quam saepe mollitia est delectus laudantium! Qui?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Odio explicabo ipsum et
+                                    ipsam
+                                    quasi quas aliquid laborum fugiat dolorum,
+                                    necessitatibus neque eos, nam quam saepe
+                                    mollitia est delectus laudantium! Qui?</p>
                             </proj-card>
                         </a>
                     </li>
@@ -131,13 +143,22 @@
                     <li>
                         <a href="pages/experiences.html#exp1">
                             <exp-card>
-                                <img src="./fake.jpg" alt="Logo of [Company Name]">
+                                <img alt="Logo of [Company Name]"
+                                     src="./fake.jpg">
                                 <div>
                                     <span><b>Job Title</b> | Company</span>
                                     <span>
-                                        <time datetime="2024-05">May 2024</time> - <time datetime="2025-10">Oct 2025</time>
+                                        <time datetime="2024-05">May 2024</time> - <time
+                                            datetime="2025-10">Oct 2025</time>
                                     </span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat accusamus reiciendis consequuntur aliquam sed dicta quasi nesciunt repudiandae ut cum, quae facere expedita voluptatibus vero laboriosam? Reprehenderit, eos sequi?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Non fugiat accusamus
+                                        reiciendis consequuntur aliquam sed
+                                        dicta
+                                        quasi nesciunt repudiandae ut cum, quae
+                                        facere expedita voluptatibus vero
+                                        laboriosam? Reprehenderit, eos
+                                        sequi?</p>
                                 </div>
                             </exp-card>
                         </a>
@@ -145,13 +166,22 @@
                     <li>
                         <a href="pages/experiences.html#exp2">
                             <exp-card>
-                                <img src="./fake.jpg" alt="Logo of [Company Name]">
+                                <img alt="Logo of [Company Name]"
+                                     src="./fake.jpg">
                                 <div>
                                     <span><b>Job Title</b> | Company</span>
                                     <span>
-                                        <time datetime="2024-05">May 2024</time> - <time datetime="2025-10">Oct 2025</time>
+                                        <time datetime="2024-05">May 2024</time> - <time
+                                            datetime="2025-10">Oct 2025</time>
                                     </span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat accusamus reiciendis consequuntur aliquam sed dicta quasi nesciunt repudiandae ut cum, quae facere expedita voluptatibus vero laboriosam? Reprehenderit, eos sequi?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Non fugiat accusamus
+                                        reiciendis consequuntur aliquam sed
+                                        dicta
+                                        quasi nesciunt repudiandae ut cum, quae
+                                        facere expedita voluptatibus vero
+                                        laboriosam? Reprehenderit, eos
+                                        sequi?</p>
                                 </div>
                             </exp-card>
                         </a>
@@ -159,13 +189,22 @@
                     <li>
                         <a href="pages/experiences.html#exp3">
                             <exp-card>
-                                <img src="./fake.jpg" alt="Logo of [Company Name]">
+                                <img alt="Logo of [Company Name]"
+                                     src="./fake.jpg">
                                 <div>
                                     <span><b>Job Title</b> | Company</span>
                                     <span>
-                                        <time datetime="2024-05">May 2024</time> - <time datetime="2025-10">Oct 2025</time>
+                                        <time datetime="2024-05">May 2024</time> - <time
+                                            datetime="2025-10">Oct 2025</time>
                                     </span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat accusamus reiciendis consequuntur aliquam sed dicta quasi nesciunt repudiandae ut cum, quae facere expedita voluptatibus vero laboriosam? Reprehenderit, eos sequi?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Non fugiat accusamus
+                                        reiciendis consequuntur aliquam sed
+                                        dicta
+                                        quasi nesciunt repudiandae ut cum, quae
+                                        facere expedita voluptatibus vero
+                                        laboriosam? Reprehenderit, eos
+                                        sequi?</p>
                                 </div>
                             </exp-card>
                         </a>
@@ -176,83 +215,65 @@
     </main>
 
 
-
-    <footer>
-        <div>
-            <p>Shall We?</p>
-            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_15_90)">
-                    <rect width="24" height="24" fill="white"/>
-                    <path d="M20 12C20 16.4183 16.4183 20 12 20C10.5937 20 9.27223 19.6372 8.12398 19C7.53267 18.6719 4.48731 20.4615 3.99998 20C3.44096 19.4706 5.4583 16.6708 5.07024 16C4.38956 14.8233 3.99999 13.4571 3.99999 12C3.99999 7.58172 7.58171 4 12 4C16.4183 4 20 7.58172 20 12Z" stroke="#000000" stroke-linejoin="round"/>
-                </g>
-                <defs>
-                    <clipPath id="clip0_15_90">
-                        <rect width="24" height="24" fill="white"/>
-                    </clipPath>
-                </defs>
-            </svg>
-        </div>
-        <div>
-            <p>I'm on a mission to build reliable software system. Want to talk about it?</p>
+    <footer class="footer">
+        <section class="contact">
+            <h2>Shall We?</h2>
             <div>
-                <form>
-                    <fieldset>
-                        <legend>Contact Information</legend>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        <br><br>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <br><br>
-                        <label for="message">Message:</label>
-                        <textarea name="message" id="message" required></textarea>
-                        <br><br>
-                        <input type="submit" value="Contact Me">
-                    </fieldset>
-                </form>
-                <dialog id="confirmDialog">
-                    <p>Are you sure you want to submit this form?</p>
-                    <button id="cancelBtn">Cancel</button>
-                    <button id="confirmBtn">Confirm</button>
-                </dialog>
+                <p>I'm on a mission to build reliable software system. Want to
+                    talk
+                    about it?
+                </p>
+                <div class="form-wrapper">
+                    <form>
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <label for="name">Name:</label>
+                            <input id="name" name="name" required type="text">
+                            <br><br>
+                            <label for="email">Email:</label>
+                            <input id="email" name="email" required
+                                   type="email">
+                            <br><br>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message"
+                                      required></textarea>
+                            <br><br>
+                            <input type="submit" value="Contact Me">
+                        </fieldset>
+                    </form>
+                    <dialog id="confirmDialog">
+                        <p>Are you sure you want to submit this form?</p>
+                        <button id="cancelBtn">Cancel</button>
+                        <button id="confirmBtn">Confirm</button>
+                    </dialog>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/jialuohu"
+                       target="_blank">
+                        <img alt="Link to my LinkedIn profile" height="20"
+                             src="res/linkedin.png" width="20">
+                    </a>
+                    <a href="https://www.instagram.com/hu_frame"
+                       target="_blank">
+                        <img alt="Link to my instagram profile" height="20"
+                             src="res/ig.png" width="20">
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="https://www.linkedin.com/in/jialuohu" target="_blank">
-                    <img src="res/linkedin.png" alt="Link to my LinkedIn profile" width="20" height="20">
-                </a>
-                <a href="https://www.instagram.com/hu_frame" target="_blank">
-                    <img src="res/ig.png" alt="Link to my instagram profile" width="20" height="20">
-                </a>
-            </div>
-        </div>
-        <div>
-            &copy;2025 Jialuo Hu 
-        </div>
+        </section>
+        <section class="copyright">
+            <span>&copy;2025 Jialuo Hu</span>
+        </section>
     </footer>
 
-    <hello-world></hello-world>
+</div>
 
-    <script>
-        // 2. Define the behavior of the new element in a class
-        class HelloWorld extends HTMLElement {
-            // This special function runs automatically when the element
-            // is connected (added) to the web page.
-            connectedCallback() {
-                console.log("Hello world!");
-            }
-        }
-
-        // 3. Register your new element with the browser,
-        // linking the tag name 'hello-world' to your class.
-        customElements.define('hello-world', HelloWorld);
-    </script>
-
-    <noscript>
-        <div>
-            <strong>This website requires JavaScript to be enabled.</strong>
-            <p>Please enable JavaScript in your browser settings to continue.</p>
-        </div>
-    </noscript>
+<noscript>
+    <div>
+        <strong>This website requires JavaScript to be enabled.</strong>
+        <p>Please enable JavaScript in your browser settings to continue.</p>
+    </div>
+</noscript>
 </body>
 
 </html>
