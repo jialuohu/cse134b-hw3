@@ -45,7 +45,7 @@
     --footer-copyright-text-color: black;
     --footer-copyright-font-weight: 600;
     --footer-copyright-font-size: 1.2rem;
-    --footer-copyright-padding-size: 5px;
+    --footer-copyright-padding-size: 8px;
     --footer-copyright-background-color: var(--primary-color);
     --footer-copyright-shadow-size: 10px;
     --footer-copyright-shadow-color: rgba(0, 0, 0, 0.5);
