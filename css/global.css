@@ -1,37 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
+
+    --primary-color: #89A8B2;
+    --secondary-color: #B3C8CF;
+    --tertiary-color: #E5E1DA;
+    --quaternary-color: #F1F0E8;
+
     --layout-gap-size: 4rem;
 
     /* header */
     --header-padding-size: 1rem;
-    --header-background-color: #F0E4D3;
+    --header-background-color: var(--primary-color);
     --header-shadow-size: 10px;
     --header-shadow-color: rgba(0, 0, 0, 0.5);
     --header-z-index: 1000;
 
     --nav-text-color: black;
-    --nav-gap-size: 1.5rem;
+    --nav-background-color: var(--secondary-color);
+    --nav-gap-size: 1rem;
     --nav-font-size: 1.125rem;
+    --nav-shadow-size: 5px;
+    --nav-shadow-color: rgba(0, 0, 0, 0.3);
 
     --logo-font-size: 3rem;
     --logo-shadow-size: 8px;
     --logo-shadow-color: rgba(0, 0, 0, 0.8);
 
     /* content */
-    --main-text-color: black;
-    --main-background-color: #FAF7F3;
+    --main-text-color: var(--secondary-color);
+    --main-background-color: var(--tertiary-color);
 
     /* footer */
     --footer-gap-size: 1.25rem;
 
-    --footer-contact-background-color: #DCC5B2;
+    --footer-contact-text-color: var(--primary-color);
+    --footer-contact-background-color: #16476A;
     --footer-contact-gap-size: 2rem;
+    --footer-contact-button-shadow-size: 8px;
+    --footer-contact-button-shadow-color: rgba(0, 0, 0, 0.8);
 
-    --footer-copyright-font-weight: 400;
+    --footer-buttons-gap-size: 1.5rem;
+
+    --footer-copyright-text-color: black;
+    --footer-copyright-font-weight: 600;
     --footer-copyright-font-size: 1.2rem;
     --footer-copyright-padding-size: 5px;
-    --footer-copyright-background-color: #F0E4D3;
+    --footer-copyright-background-color: var(--primary-color);
     --footer-copyright-shadow-size: 10px;
     --footer-copyright-shadow-color: rgba(0, 0, 0, 0.5);
 }
@@ -51,5 +66,5 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: var(--main-background-color);
     line-height: 1.6;
-    color: var(--main-text-color);
+    color: black;
 }

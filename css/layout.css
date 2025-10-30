@@ -33,9 +33,10 @@
 
         a {
             cursor: pointer;
+            transition: color 0.4s ease-in-out;
 
             &:hover {
-                filter: opacity(50%);
+                color: var(--nav-background-color);
             }
         }
     }
@@ -50,13 +51,16 @@
 
             li {
                 font-size: var(--nav-font-size);
-                filter: drop-shadow(2px 2px var(--logo-shadow-size) var(--logo-shadow-color));
 
                 a {
                     cursor: pointer;
+                    padding: 15px 10px;
+                    border-radius: 6px;
+                    filter: drop-shadow(2px 2px var(--nav-shadow-size) var(--nav-shadow-color));
+                    transition: all 0.3s ease-in-out;
 
                     &:hover {
-                        filter: opacity(50%);
+                        background-color: var(--secondary-color);
                     }
                 }
             }
@@ -73,7 +77,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*gap: var(--footer-gap-size);*/
 
     .contact {
         /* style */
@@ -82,22 +85,89 @@
         background-color: var(--footer-contact-background-color);
 
         /* flex */
-        display: flex;
-        justify-content: center;
-        gap: var(--footer-contact-gap-size);
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.1fr 1fr 1fr;
+        align-items: center;
+        /*gap: var(--footer-contact-gap-size);*/
 
         h2 {
-            font-size: 5rem;
+            grid-column: 2;
+            justify-self: flex-end;
+            position: relative;
+            top: 2rem;
+            font-size: 7rem;
+            color: var(--footer-contact-text-color);
+
+            .break {
+                position: relative;
+                top: -4rem;
+                display: block;
+
+                &::first-letter {
+                    font-size: 7.5rem;
+                }
+            }
+
+            &::first-letter {
+                font-size: 7.8rem;
+            }
         }
 
         .form-wrapper {
-            input, textarea {
-                outline: none;
+            grid-column: 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: var(--footer-contact-gap-size);
+
+            p {
+                display: block;
+                font-size: 1.2rem;
+                color: var(--footer-contact-text-color);
             }
+
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                gap: var(--footer-buttons-gap-size);
+
+                .mail-btn {
+                    padding: 12px 20px;
+                    font-size: 1.25rem;
+                    border-radius: 5px;
+                    box-shadow: 1px 2px var(--footer-contact-button-shadow-size) var(--footer-contact-button-shadow-color);
+                    background-color: var(--primary-color);
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+
+                    span {
+                        filter: drop-shadow(0 0 var(--footer-contact-button-shadow-size) var(--footer-contact-button-shadow-color));
+                    }
+
+                    &:hover {
+                        background-color: var(--secondary-color);
+                    }
+                }
+
+                a img {
+                    width: 40px;
+                    box-shadow: 0 2px var(--footer-contact-button-shadow-size) var(--footer-contact-button-shadow-color);
+                    border-radius: 5px;
+                }
+
+                a:last-of-type img {
+                    box-shadow: 0 2px var(--footer-contact-button-shadow-size) var(--footer-contact-button-shadow-color);
+                    border-radius: 11px;
+                }
+            }
+
         }
     }
 
     .copyright {
+        color: var(--footer-copyright-text-color);
         background-color: var(--footer-copyright-background-color);
         padding: var(--footer-copyright-padding-size);
         width: 100%;
@@ -105,10 +175,6 @@
         font-size: var(--footer-copyright-font-size);
         font-weight: var(--footer-copyright-font-weight);
         box-shadow: 0 0 var(--footer-copyright-shadow-size) var(--footer-copyright-shadow-color);
-
-        span {
-            filter: drop-shadow(0 0 var(--logo-shadow-size) var(--logo-shadow-color));
-        }
     }
 }
 
