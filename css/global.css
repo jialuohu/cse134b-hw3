@@ -11,7 +11,6 @@
     --layout-gap-size: 4rem;
 
     /* header */
-    --header-height: 110px;
     --header-padding-size: 1rem;
     --header-background-color: var(--primary-color);
     --header-shadow-size: 10px;
@@ -32,6 +31,7 @@
     /* content */
     --main-text-color: black;
     --main-background-color: #f4f4f4;
+    --main-intro-card-gap-size: 30px;
     --main-intro-background-color: var(--quaternary-color);
     --main-intro-card-shadow-size: 8px;
     --main-intro-card-shadow-color: rgba(0, 0, 0, 0.5);

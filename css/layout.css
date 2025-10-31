@@ -14,7 +14,6 @@
 .header {
     /* style */
     width: 100%;
-    height: var(--header-height);
     background-color: var(--header-background-color);
     box-shadow: 0 0 var(--header-shadow-size) var(--header-shadow-color);
 
