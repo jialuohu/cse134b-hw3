@@ -8,28 +8,12 @@
           name="keywords">
     <link href="res/favicon.png" rel="icon" type="image/png">
     <link href="css/layout.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link crossorigin="anonymous"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
     <title>Portfolio-Jialuo Hu</title>
-    <style>
-        proj-card {
-            display: block;
-            background-color: lightblue;
-            width: 300px;
-            height: 150px;
-            margin: 12px;
-            padding: 10px;
-            border-radius: 4px;
-        }
-
-        exp-card {
-            display: block;
-            background-color: lightcoral;
-            width: 600px;
-            height: 150px;
-            margin: 12px;
-            padding: 10px;
-            border-radius: 4px;
-        }
-    </style>
 </head>
 
 <body>
@@ -53,36 +37,110 @@
 
     <main class="main">
         <!-- Intro part -->
-        <section>
-            <h2 hidden>Introduction</h2>
+        <section class="introduction" id="introduction">
             <article>
                 <!-- Random picture -->
-                <picture>
-                    <source srcset="https://picsum.photos/200/300">
-                    <img alt="Profile Photo"
-                         src="https://picsum.photos/200/300">
-                </picture>
-                <div>
-                    <h3>Hello I'm <i>Jialuo Hu</i></h3>
-                    <p>I build <em>reliable high-performance</em> software</p>
+                <img alt="Profile Photo" class="profile-photo"
+                     src="res/profile-img.jpg">
+                <div class="intro">
+                    <h3>Hello, I'm Jialuo Hu <img alt="Hand Wave"
+                                                  src="res/hello.svg"></h3>
+                    <div class="intro-text">
+                        <p>
+                            I build <em>reliable high-performance</em> software.
+                        </p>
+                    </div>
+                    <div class="intro-icons">
+                        <a href="https://github.com/jialuohu">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jialuohu">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                        <a href="mailto:jih146@ucsd.edu">
+                            <i class="fa-solid fa-envelope fa-2xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hu_frame">
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <h3>My Skills</h3>
+                <div class="skills">
+                    <h3>I know <span>things</span> below: </h3>
                     <ul>
-                        <li>Frontend</li>
-                        <li>Backend</li>
-                        <li>...</li>
+                        <li>
+                            <img alt="Golang Programming Language"
+                                 src="res/skills/go-icon-48.png">
+                            Golang
+                        </li>
+                        <li>
+                            <img alt="C++ Programming Language"
+                                 src="res/skills/cpp-icon-48.png">
+                            C++
+                        </li>
+                        <li>
+                            <img alt="C Programming Language"
+                                 src="res/skills/c-icon-48.png">
+                            C Language
+                        </li>
+                        <li>
+                            <img alt="Rust Programming Language"
+                                 src="res/skills/rust-icon-48.png">
+                            Rust
+                        </li>
+                        <li>
+                            <img alt="Python Programming Language"
+                                 src="res/skills/python-icon-48.png">
+                            Python
+                        </li>
+                        <li>
+                            <img alt="Javascript Programming Language"
+                                 src="res/skills/js-icon-48.png">
+                            Javascript
+                        </li>
+                        <li>
+                            <img alt="HTML Programming Language"
+                                 src="res/skills/html-icon-48.png">
+                            HTML
+                        </li>
+                        <li>
+                            <img alt="CSS Programming Language"
+                                 src="res/skills/css-icon-48.png">
+                            CSS
+                        </li>
+                        <li>
+                            <img alt="Linux Logo"
+                                 src="res/skills/linux-icon-48.png">
+                            Linux
+                        </li>
+                        <li>
+                            <img alt="Docker Logo"
+                                 src="res/skills/docker-icon-48.png">
+                            Docker
+                        </li>
+                        <li>
+                            <img alt="K8S Logo"
+                                 src="res/skills/k8s-icon-48.png">
+                            Kubernetes
+                        </li>
+                        <li>
+                            <img alt="AWS Logo"
+                                 src="res/skills/aws-icon-48.png">
+                            AWS
+                        </li>
                     </ul>
                 </div>
             </article>
             <!-- Scroll -->
-            <button>Scroll</button>
+            <a class="scroll-btn" href="#projects-experiences">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-chevron-down fa-2xl"></i>
+            </a>
         </section>
 
-        <br>
 
         <!-- Proj & Exp Part -->
-        <section>
+        <section class="projects-experiences" id="projects-experiences">
             <h2 hidden>Projects & Experiences</h2>
             <!-- Proj -->
             <article>
@@ -240,7 +298,7 @@
             </div>
         </section>
         <section class="copyright">
-            <span>&copy;2025 Jialuo Hu</span>
+            <span>&copy;Copyright 2025 Jialuo Hu</span>
         </section>
     </footer>
 

@@ -6,10 +6,12 @@
     --secondary-color: #B3C8CF;
     --tertiary-color: #E5E1DA;
     --quaternary-color: #F1F0E8;
+    --quinary-color: #16476A;
 
     --layout-gap-size: 4rem;
 
     /* header */
+    --header-height: 110px;
     --header-padding-size: 1rem;
     --header-background-color: var(--primary-color);
     --header-shadow-size: 10px;
@@ -20,22 +22,26 @@
     --nav-background-color: var(--secondary-color);
     --nav-gap-size: 1rem;
     --nav-font-size: 1.125rem;
-    --nav-shadow-size: 5px;
-    --nav-shadow-color: rgba(0, 0, 0, 0.3);
+    --nav-shadow-size: 8px;
+    --nav-shadow-color: rgba(0, 0, 0, 0.4);
 
     --logo-font-size: 3rem;
     --logo-shadow-size: 8px;
     --logo-shadow-color: rgba(0, 0, 0, 0.8);
 
     /* content */
-    --main-text-color: var(--secondary-color);
-    --main-background-color: var(--tertiary-color);
+    --main-text-color: black;
+    --main-background-color: #f4f4f4;
+    --main-intro-background-color: var(--quaternary-color);
+    --main-intro-card-shadow-size: 8px;
+    --main-intro-card-shadow-color: rgba(0, 0, 0, 0.5);
+    --main-intro-card-icon-background-color: var(--secondary-color);
 
     /* footer */
     --footer-gap-size: 1.25rem;
 
     --footer-contact-text-color: var(--primary-color);
-    --footer-contact-background-color: #16476A;
+    --footer-contact-background-color: var(--quinary-color);
     --footer-contact-gap-size: 2rem;
     --footer-contact-button-shadow-size: 8px;
     --footer-contact-button-shadow-color: rgba(0, 0, 0, 0.8);
@@ -55,6 +61,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
 a {
@@ -62,9 +69,11 @@ a {
     color: var(--nav-text-color);
 }
 
+html,
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--main-background-color);
     line-height: 1.6;
     color: black;
+    scroll-behavior: smooth;
 }

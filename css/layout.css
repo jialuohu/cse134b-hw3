@@ -6,12 +6,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: var(--layout-gap-size);
     min-height: 100vh;
 }
 
 .header {
     /* style */
+    width: 100%;
+    height: var(--header-height);
     background-color: var(--header-background-color);
     box-shadow: 0 0 var(--header-shadow-size) var(--header-shadow-color);
 
@@ -34,9 +37,10 @@
 
         a {
             cursor: pointer;
-            transition: color 0.4s ease-in-out;
+            transition: all 0.5s ease-in-out;
 
             &:hover {
+                filter: brightness(140%);
                 color: var(--nav-background-color);
             }
         }
@@ -52,15 +56,22 @@
 
             li {
                 font-size: var(--nav-font-size);
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
 
                 a {
                     cursor: pointer;
-                    padding: 15px 10px;
+                    padding: 1rem 0.8rem;
                     border-radius: 6px;
-                    filter: drop-shadow(2px 2px var(--nav-shadow-size) var(--nav-shadow-color));
+                    /*filter: drop-shadow(2px 2px var(--nav-shadow-size) var(--nav-shadow-color));*/
                     transition: all 0.3s ease-in-out;
 
                     &:hover {
+                        filter: brightness(125%);
+                        box-shadow: 0 2px var(--nav-shadow-size) var(--nav-shadow-color);
                         background-color: var(--secondary-color);
                     }
                 }
@@ -69,15 +80,13 @@
     }
 }
 
-.main {
-    margin: 200px auto;
-}
 
 .footer {
     /* flex */
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     .contact {
         /* style */
@@ -150,6 +159,8 @@
 
                     &:hover {
                         background-color: var(--secondary-color);
+                        filter: brightness(125%);
+                        transform: scale(1.1);
                     }
                 }
 
@@ -157,6 +168,12 @@
                     width: 40px;
                     box-shadow: 0 2px var(--footer-contact-button-shadow-size) var(--footer-contact-button-shadow-color);
                     border-radius: 5px;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        filter: brightness(125%);
+                        transform: scale(1.1);
+                    }
                 }
 
                 a:last-of-type img {
@@ -179,6 +196,5 @@
         box-shadow: 0 0 var(--footer-copyright-shadow-size) var(--footer-copyright-shadow-color);
     }
 }
-
 
 
