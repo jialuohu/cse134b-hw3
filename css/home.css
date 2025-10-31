@@ -154,6 +154,7 @@
                         cursor: default;
                         color: white;
                         background-color: var(--quinary-color);
+                        background-color: var(--quinary-color-p3);
                         transform: scale(1.1);
                     }
 

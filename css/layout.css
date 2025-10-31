@@ -1,6 +1,12 @@
 @import "global.css";
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 
+::target-text {
+    background-color: #DFFFEA;
+    color: #003B14;
+    font-weight: bold;
+}
+
 .wrapper {
     /* flex */
     display: flex;
@@ -65,7 +71,6 @@
                     cursor: pointer;
                     padding: 1rem 0.8rem;
                     border-radius: 6px;
-                    /*filter: drop-shadow(2px 2px var(--nav-shadow-size) var(--nav-shadow-color));*/
                     transition: all 0.3s ease-in-out;
 
                     &:hover {
@@ -156,11 +161,11 @@
                         filter: drop-shadow(0 0 var(--footer-contact-button-shadow-size) var(--footer-contact-button-shadow-color));
                     }
 
-                    &:hover {
-                        background-color: var(--secondary-color);
-                        filter: brightness(125%);
-                        transform: scale(1.1);
-                    }
+                    /*&:hover {*/
+                    /*    background-color: var(--secondary-color);*/
+                    /*    filter: brightness(125%);*/
+                    /*    transform: scale(1.1);*/
+                    /*}*/
                 }
 
                 a img {
@@ -169,10 +174,15 @@
                     border-radius: 5px;
                     transition: all 0.3s ease-in-out;
 
-                    &:hover {
-                        filter: brightness(125%);
-                        transform: scale(1.1);
-                    }
+                    /*&:hover {*/
+                    /*    filter: brightness(125%);*/
+                    /*    transform: scale(1.1);*/
+                    /*}*/
+                }
+
+                :is(.mail-btn, a img):hover {
+                    filter: brightness(125%);
+                    transform: scale(1.1);
                 }
 
                 a:last-of-type img {
@@ -186,7 +196,11 @@
 
     .copyright {
         color: var(--footer-copyright-text-color);
-        background-color: var(--footer-copyright-background-color);
+        /*background-color: var(--footer-copyright-background-color);*/
+        background-color: color-mix(in srgb,
+        var(--footer-copyright-background-color) 90%,
+        var(--quinary-color) 10%
+        );
         padding: var(--footer-copyright-padding-size) 0;
         width: 100%;
         text-align: center;
